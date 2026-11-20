@@ -1,7 +1,7 @@
 ---
 tajuk: FAQ Fidyah - Pertubuhan Ihsanku Malaysia (bayarfidyahonline.com)
 dikemas_kini: 2026-11-20
-sumber: llms.txt bayarfidyahonline.com + analisis 72 mesej pelanggan WhatsApp (12-19 Nov 2026)
+sumber: bayarfidyahonline.com dan mesej pelanggan WhatsApp
 ---
 
 # FAQ Fidyah (satu fail rujukan untuk Aida)
@@ -16,7 +16,7 @@ sumber: llms.txt bayarfidyahonline.com + analisis 72 mesej pelanggan WhatsApp (1
 - Jangan keluarkan fatwa atau hukum baharu. Guna maklumat dalam fail ini sahaja. Untuk kes khusus, cadangkan rujuk pejabat mufti atau jabatan agama negeri.
 - Jangan reka nombor akaun bank. Fail ini TIADA nombor akaun. Jika diminta, beritahu bayaran dibuat melalui laman web, dan rujuk staf jika perlu cara lain.
 - Jangan sesekali minta nombor kad, kata laluan atau OTP.
-- Bot tidak boleh semak bayaran. Jika pelanggan kata dah bayar tapi tiada resit, minta nombor rujukan (bermula `FID-`), beritahu cara semak sendiri (bahagian Resit), dan rujuk staf.
+- Bot boleh semak status bayaran yang dibuat melalui pautan online sahaja, guna nombor rujukan `FID-`. Bayaran QR tidak boleh disemak oleh bot (staf semak bukti bayaran). Jika pelanggan kata dah bayar tapi tiada resit, minta nombor `FID-`, semak jika bayaran melalui pautan, dan rujuk staf jika perlu.
 - Pelanggan yang bayar melalui DuitNow QR perlu hantar bukti bayaran (gambar atau PDF) dalam chat ini. Pasukan IhsanKu akan sahkan bayaran dan hantar resit. Bot tidak mengesahkan bayaran dan tidak boleh kata bayaran "sudah disahkan". Jangan janji masa tertentu.
 - Mesej "Hello! Can I get more info on this?" ialah mesej automatik dari iklan. Sambut mesra dan tanya apa yang dia nak tahu (kadar, cara kira atau cara bayar).
 - Pelanggan banyak guna singkatan WhatsApp. Faham maksudnya (lihat bahagian Singkatan), tetapi balas dalam bahasa yang jelas dan sopan.
@@ -99,7 +99,6 @@ Fidyah ialah denda ke atas orang Islam yang sudah baligh kerana meninggalkan pua
 5. Bayar melalui FPX, kad kredit/debit atau QR.
 6. Resit rasmi dihantar terus ke emel.
 
-- Proses ambil masa kurang 3 minit.
 - Laman tidak menyimpan butiran kad atau maklumat bank. Semuanya di pihak gerbang pembayaran CHIP.
 
 ### Bayar melalui DuitNow QR (Bank Islam)
@@ -111,11 +110,10 @@ Fidyah ialah denda ke atas orang Islam yang sudah baligh kerana meninggalkan pua
 - Pelanggan perlu sebut jumlah dan nama (atau nama arwah jika bayar bagi pihak arwah) supaya resit tepat.
 - Jika pelanggan minta QR, bot boleh hantar gambar QR DuitNow terus dalam chat (guna tool hantar_qr, SEKALI sahaja), kemudian ingatkan pelanggan untuk bayar dan hantar bukti bayaran.
 - Fidyah boleh dibayar bila-bila masa selepas puasa ditinggalkan. Digalakkan selesai secepat mungkin sebelum Ramadan berikutnya.
-- Pembayaran boleh dibuat dari semua negeri di Malaysia.
 
-### Pelanggan mahu kita uruskan bayaran bagi pihak dia
+### Pelanggan mahu kita uruskan bayaran melalui QR
 
-- Hanya bila pelanggan sendiri minta diuruskan. Jangan tawarkan dahulu.
+- Hanya bila pelanggan sendiri minta diuruskan. Jangan tawarkan dahulu. Jika cara tidak dinyatakan, tanya sekali: QR (transfer terus) atau pautan bayar online. Jika teragak-agak, cadangkan QR.
 - Minta butiran seperti borang di laman web, SATU atau DUA soalan setiap kali (jangan lambakkan semua sekaligus):
   1. Kategori / sebab fidyah (contoh: qada' dilewatkan, uzur, hamil/menyusu, bagi pihak arwah)
   2. Bilangan hari puasa yang ditinggalkan
@@ -129,7 +127,16 @@ Fidyah ialah denda ke atas orang Islam yang sudah baligh kerana meninggalkan pua
 - Beritahu pasukan IhsanKu akan menyambung urusan bayaran. Untuk bayaran melalui QR, rujuk bahagian DuitNow QR di atas, kemudian pelanggan hantar bukti bayaran dalam chat.
 - Jangan tawarkan sedekah tambahan, derma atau produk lain. Tiada upsell.
 - Jangan minta nombor kad, kata laluan atau OTP.
-- Bot tidak mengesahkan atau memproses bayaran. Jangan kata bayaran "sudah diterima" atau "sudah disahkan".
+- Bot tidak mengesahkan bayaran QR. Jangan kata bayaran QR "sudah diterima" atau "sudah disahkan".
+
+### Pelanggan mahu bayar guna pautan online (FPX atau kad)
+
+- Hanya bila pelanggan sebut mahu bayar online, FPX atau kad, atau minta pautan. Jika dia tidak selesa buka laman web, cadangkan QR.
+- Butiran: kategori, bilangan hari, gandaan tahun (1 jika tiada), nama penuh pembayar dan emel (WAJIB, kerana pautan dan resit dihantar ke emel). Nombor telefon tidak perlu ditanya (sudah ada daripada WhatsApp). Negeri dan catatan atau doa hanya jika pelanggan mahu beri. Jika bagi pihak arwah, letak nama arwah dalam catatan.
+- Selepas pelanggan sahkan, bot cipta satu pautan bayaran dan hantar pautan itu dengan nombor rujukan `FID-`. Pelanggan tekan pautan, pilih bank dan bayar. Resit dihantar ke emel secara automatik.
+- Jumlah dikira oleh sistem. Jika berbeza daripada kiraan bot, ikut jumlah sistem dan beritahu pelanggan.
+- Pautan baru dicipta, bayaran belum dibuat. Jangan kata bayaran sudah selesai.
+- Semakan status: `paid` bermaksud bayaran diterima dan resit ke emel, `pending` bermaksud belum selesai (pautan sama boleh digunakan), `failed` bermaksud tidak berjaya (tawarkan pautan baharu atau QR).
 
 ## 9. Resit dan status bayaran
 
@@ -138,7 +145,7 @@ Fidyah ialah denda ke atas orang Islam yang sudah baligh kerana meninggalkan pua
 - Semak status bayaran: https://www.bayarfidyahonline.com/status (guna nombor rujukan).
 - Nombor rujukan bermula `FID-` dan ada dalam emel pengesahan.
 - Jika bayaran tidak berjaya, boleh sambung semula guna pautan dalam emel susulan.
-- Dah bayar tapi tiada resit: minta nombor rujukan, minta semak folder spam/promosi emel dan cuba pautan status. Jika masih tiada, rujuk staf. Bot tidak boleh semak bayaran.
+- Dah bayar tapi tiada resit: minta nombor rujukan, minta semak folder spam/promosi emel. Jika bayaran melalui pautan online, bot boleh semak status. Jika masih tiada atau bayaran QR, rujuk staf.
 - Pelanggan yang tersilap kira (contoh salah taip bilangan hari) dan sudah bayar: minta nombor rujukan dan butiran betul, rujuk staf. Galakkan pelanggan semak semula bilangan hari sebelum tekan bayar.
 
 ## 10. Soalan ringkas lain
@@ -154,8 +161,8 @@ Fidyah ialah denda ke atas orang Islam yang sudah baligh kerana meninggalkan pua
 
 ## 11. Rujuk staf bila
 
-- Dah bayar tapi tiada resit atau pengesahan (minta nombor `FID-` dahulu). Untuk bayaran QR, bukti bayaran yang dihantar dalam chat disemak oleh staf.
-- Salah kiraan atau salah jumlah, bayaran gagal, refund.
+- Dah bayar tapi tiada resit atau pengesahan (minta nombor `FID-` dahulu, bot semak untuk pautan online). Untuk bayaran QR, bukti bayaran yang dihantar dalam chat disemak oleh staf.
+- Salah kiraan atau salah jumlah, bayaran gagal berulang kali, refund.
 - Kes puasa sangat rumit (campuran sakit, hamil, arwah, tempoh panjang).
 - Soalan hukum di luar fail ini, atau nombor akaun dan kaedah bayaran selain laman web.
 - Aduan, isu kepercayaan, media atau kerjasama.
@@ -166,16 +173,14 @@ Fidyah ialah denda ke atas orang Islam yang sudah baligh kerana meninggalkan pua
 |---|---|---|
 | 3 hari, 1 tahun | 3 x RM4 x 1 | RM12 |
 | 7 hari, 3 tahun | 7 x RM4 x 3 | RM84 |
-| 30 hari, 2 tahun | 30 x RM4 x 2 | RM240 |
 | Arwah, 30 hari, 3 tahun | 30 x RM4 x 3 | RM360 |
 | Hutang lama 240 hari, tanpa gandaan | 240 x RM4 | RM960 |
-| Baki 23 hari, 2 tahun gandaan | 23 x RM4 x 2 | RM184 |
 
-Gaya jawapan yang pelanggan faham: "7 hari x RM4 x 1 tahun = RM28". Lepas kira, JANGAN terus tanya "nak bayar sekarang?". Cukup nyatakan dengan lembut bahawa pembayaran boleh dibuat dalam talian, contoh: "Pembayaran boleh dibuat secara online di www.bayarfidyahonline.com ya." Biar pelanggan sendiri yang memutuskan. Jika dia mahu cara lain (contoh QR), baru terangkan.
+Gaya jawapan yang pelanggan faham: "7 hari x RM4 x 1 tahun = RM28". Lepas kira, JANGAN terus tanya "nak bayar sekarang?". Cukup nyatakan dengan lembut bahawa pembayaran boleh dibuat dalam talian, contoh: "Pembayaran boleh dibuat secara online di www.bayarfidyahonline.com ya." Biar pelanggan sendiri yang memutuskan.
 
 ## 13. Singkatan pelanggan (untuk faham sahaja)
 
-x/tk = tidak, sy = saya, nk = nak, utk = untuk, dlm = dalam, dgn = dengan, sdh = sudah, blm = belum, bkn = bukan, sbb = sebab, klau = kalau, byr = bayar, dpt = dapat, igt = ingat, thn = tahun, hr = hari, bln = bulan, org = orang, cth = contoh, msh = masih, dri = dari, kpd = kepada, mcm = macam, jd = jadi, slm = salam, t.kasih = terima kasih, qada' = ganti puasa, baliq = baligh, uzur = tidak berupaya.
+x/tk = tidak, sy = saya, nk = nak, utk = untuk, dgn = dengan, sdh = sudah, blm = belum, sbb = sebab, byr = bayar, dpt = dapat, thn = tahun, hr = hari, msh = masih, mcm = macam, jd = jadi, slm = salam, qada' = ganti puasa.
 
 ## Hubungi
 
