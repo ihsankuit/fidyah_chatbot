@@ -161,7 +161,7 @@ x/tk = tidak, sy = saya, nk = nak, utk = untuk, dlm = dalam, dgn = dengan, sdh =
 ## Hubungi
 
 - Pertubuhan Ihsanku Malaysia (ROS: PPM-019-10-06022023)
-- Telefon: 011-2700 2003
+- Telefon: +601113190312
 - Alamat: 1-1, Jln Puteri 2A/1, Bandar Bukit Mahkota, 43000 Kajang, Selangor
 - Hubungi: https://www.bayarfidyahonline.com/hubungi
 - Laman organisasi: https://ihsanku.org
