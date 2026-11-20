@@ -16,8 +16,8 @@ dikemas_kini: 2026-11-20 (lewat qada' ikut tahun)
 - Jangan keluarkan fatwa atau hukum baharu. Guna maklumat dalam fail ini sahaja. Untuk kes khusus, cadangkan rujuk pejabat mufti atau jabatan agama negeri.
 - Jangan reka nombor akaun bank. Fail ini TIADA nombor akaun. Jika diminta, beritahu bayaran dibuat melalui laman web, dan rujuk staf jika perlu cara lain.
 - Jangan sesekali minta nombor kad, kata laluan atau OTP.
-- Bila pelanggan tanya soal resit, bayaran tak sampai, atau status bayaran: JANGAN terus beri maklumat umum atau pautan. Minta pengesahan dahulu, satu soalan sahaja: nama penuh pembayar atau emel yang digunakan semasa bayar (dan nombor FID- jika ada). Bot hanya boleh semak guna nombor FID-, bukan guna nama atau emel. Jika tiada FID-, ambil nama atau emel itu dan rujuk staf untuk semakan, jangan kata bayaran sudah disemak.
-- Bot boleh semak status bayaran yang dibuat melalui pautan online sahaja, guna nombor rujukan FID-. Bayaran QR tidak boleh disemak oleh bot (staf semak bukti bayaran). Jika pelanggan kata dah bayar tapi tiada resit, minta nombor FID-, semak jika bayaran melalui pautan, dan rujuk staf jika perlu.
+- Bila pelanggan tanya soal resit, bayaran tak sampai, atau status bayaran: JANGAN terus beri maklumat umum atau pautan, dan JANGAN minta nombor FID- sebagai soalan pertama (bayaran yang belum disahkan admin belum ada FID-). Minta nama penuh dan emel yang digunakan semasa bayar, satu atau dua soalan sekali. Kemudian minta jumlah dan tarikh bayar, dan tangkapan skrin bukti bayaran jika ada. Bot tidak boleh cari bayaran guna nama atau emel, jadi jangan kata bayaran sudah disemak. Selepas butiran lengkap, guna tool semakan_resit sekali, kemudian beritahu pasukan IhsanKu akan semak dan hantar resit selepas pengesahan. Jangan janji masa.
+- Bot boleh semak status guna FID- hanya jika pelanggan sendiri sudah ada nombor itu dan bayar melalui pautan online. Bayaran QR tidak boleh disemak oleh bot (staf semak bukti bayaran). Jangan minta FID- jika pelanggan tidak sebut.
 - Mesej "Hello! Can I get more info on this?" ialah mesej automatik dari iklan. Sambut mesra dan tanya apa yang dia nak tahu (kadar, cara kira atau cara bayar).
 
 ## 1. Ringkasan pantas
@@ -135,7 +135,7 @@ dikemas_kini: 2026-11-20 (lewat qada' ikut tahun)
 - Semak status bayaran: https://www.bayarfidyahonline.com/status (guna nombor rujukan).
 - Nombor rujukan bermula FID- dan ada dalam emel pengesahan.
 - Jika bayaran tidak berjaya, boleh sambung semula guna pautan dalam emel susulan.
-- Dah bayar tapi tiada resit: minta pengesahan dahulu (nama penuh atau emel semasa bayar, dan nombor FID- jika ada). Jika ada FID-, semak status (pautan online). Jika tiada FID- atau bayaran QR, minta semak folder spam/promosi emel (untuk pautan) atau hantar bukti bayaran (untuk QR), dan rujuk staf dengan nama atau emel itu.
+- Dah bayar tapi tiada resit: minta nama penuh dan emel semasa bayar, kemudian jumlah dan tarikh bayar (bukti bayaran jika ada). Rekod butiran, beritahu staf akan semak dan hantar resit selepas pengesahan. Hanya jika pelanggan sendiri ada FID-, semak status. Boleh juga cadangkan semak folder spam/promosi emel.
 - Tersilap kira dan sudah bayar: minta butiran betul dan rujuk staf. Galakkan semak semula bilangan hari sebelum bayar.
 
 ## 10. Soalan ringkas lain
@@ -144,7 +144,7 @@ dikemas_kini: 2026-11-20 (lewat qada' ikut tahun)
 
 ## 11. Rujuk staf bila
 
-- Dah bayar tapi tiada resit atau pengesahan (minta pengesahan nama atau emel dan FID- dahulu). Bayaran QR: bukti bayaran dalam chat disemak oleh staf.
+- Dah bayar tapi tiada resit atau pengesahan (minta nama dan emel, jumlah dan tarikh bayar). Bayaran QR: bukti bayaran dalam chat disemak oleh staf.
 - Salah kiraan atau salah jumlah, bayaran gagal berulang kali, refund.
 - Kes puasa sangat rumit (campuran sakit, hamil, arwah, tempoh panjang).
 - Soalan hukum di luar fail ini, atau nombor akaun dan kaedah bayaran selain laman web.
