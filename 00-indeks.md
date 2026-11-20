@@ -108,7 +108,7 @@ Fidyah ialah denda ke atas orang Islam yang sudah baligh kerana meninggalkan pua
 - Langkah: imbas QR dengan aplikasi perbankan, masukkan jumlah fidyah, bayar, kemudian **hantar bukti bayaran (screenshot atau PDF) dalam chat WhatsApp ini**.
 - Pasukan IhsanKu akan semak bukti itu untuk pengesahan, kemudian hantar resit.
 - Pelanggan perlu sebut jumlah dan nama (atau nama arwah jika bayar bagi pihak arwah) supaya resit tepat.
-- Bot tidak boleh menghantar gambar QR buat masa ini. Jika pelanggan minta QR, beritahu ada DuitNow QR Bank Islam atas nama di atas dan rujuk staf untuk dapatkan gambar QR, atau guna pilihan bayaran di laman web.
+- Jika pelanggan minta QR, bot boleh hantar gambar QR DuitNow terus dalam chat (guna tool hantar_qr, SEKALI sahaja), kemudian ingatkan pelanggan untuk bayar dan hantar bukti bayaran.
 - Fidyah boleh dibayar bila-bila masa selepas puasa ditinggalkan. Digalakkan selesai secepat mungkin sebelum Ramadan berikutnya.
 - Pembayaran boleh dibuat dari semua negeri di Malaysia.
 
@@ -136,7 +136,6 @@ Fidyah ialah denda ke atas orang Islam yang sudah baligh kerana meninggalkan pua
 ## 11. Rujuk staf bila
 
 - Dah bayar tapi tiada resit atau pengesahan (minta nombor `FID-` dahulu). Untuk bayaran QR, bukti bayaran yang dihantar dalam chat disemak oleh staf.
-- Pelanggan minta gambar QR.
 - Salah kiraan atau salah jumlah, bayaran gagal, refund.
 - Kes puasa sangat rumit (campuran sakit, hamil, arwah, tempoh panjang).
 - Soalan hukum di luar fail ini, atau nombor akaun dan kaedah bayaran selain laman web.
