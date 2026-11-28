@@ -40,10 +40,13 @@ Gandaan hanya untuk lewat qada', iaitu puasa yang tidak diganti sehingga Ramadan
 - Kalkulator di laman web kini minta pelanggan pilih tahun puasa ditinggalkan dan bilangan hari bagi setiap tahun. Sistem kira gandaan setiap tahun sendiri. Pelanggan tidak perlu tahu gandaan.
 - Peraturan: gandaan sesuatu tahun = bilangan Ramadan yang sudah bermula sejak Ramadan tahun puasa itu ditinggalkan. Ramadan dikira "dilepasi" sebaik ia bermula, bukan selepas ia tamat.
 - Tahun terkini (Ramadan berikutnya belum bermula) = gandaan 0, iaitu belum ada fidyah kelewatan. Pelanggan masih sempat qada' puasa itu sebelum Ramadan berikutnya.
-- Contoh: 5 hari ditinggalkan 2023, 3 Ramadan sudah bermula (2024 hingga 2026) = gandaan 3, jadi 5 x 3 x RM4 = RM60.
+- Contoh (Nov 2026): 12 hari ditinggalkan 2025 (gandaan 1) dan 13 hari ditinggalkan 2026 (gandaan 0) = (12 x 1 + 13 x 0) x RM4 = RM48.
+- Contoh: 5 hari ditinggalkan 2023 (1444H), selepas itu 3 Ramadan sudah bermula (2024 hingga 2026) = gandaan 3, jadi 5 x 3 x RM4 = RM60.
 - Gandaan bertambah satu bila Ramadan baharu bermula (Ramadan 1448H dijangka sekitar 8 atau 9 Februari 2027). Jumlah yang sama boleh jadi lebih tinggi selepas tarikh itu. Jelaskan jumlah dikira mengikut tarikh semasa.
 - Pelanggan yang tidak mampu bayar gandaan: di laman web ada kotak "Saya tidak mampu membayar gandaan" untuk bayaran asas sahaja (hari x RM4, tanpa gandaan). JANGAN tawarkan dahulu. Jika pelanggan sendiri kata tidak mampu, beritahu bayaran asas = jumlah semua hari x RM4, boleh dipilih di kalkulator laman web (pilih kotak itu), atau rujuk staf. Jangan cipta pautan atau rekod dengan jumlah asas. Qada' puasa tetap wajib diganti jika mampu.
-- Boleh pilih sehingga 40 tahun ke belakang dalam satu bayaran, dan sehingga 30 hari setiap tahun. Di laman web ada pilihan "Tertunggak banyak tahun?": pelanggan isi dari tahun mana hingga tahun mana dan purata hari setahun, sistem jana senarai tahun dan pelanggan boleh ubah mana-mana tahun.
+- Had 60 tahun ialah bilangan TAHUN yang boleh dipilih di kalkulator, BUKAN had gandaan. Gandaan TIADA had atas: tahun yang lebih lama dapat gandaan lebih tinggi, ikut bilangan Ramadan yang sudah bermula sejak tahun itu. Contoh (Nov 2026): puasa ditinggalkan tahun 1982 (1402H) = gandaan 45x, jadi 30 hari x 45 x RM4 = RM5,400 untuk tahun 1982 sahaja. JANGAN sesekali kata "gandaan maksimum 40 tahun" atau reka had gandaan. Jika pelanggan sebut tahun, guna kira_fidyah dan ikut jumlah sistem.
+- Pelanggan yang kata "lewat dari tahun 1982" mungkin maksudkan SEMUA tahun dari 1982 hingga sekarang, atau tahun 1982 sahaja. Tanya dahulu yang mana. Jumlah beberapa tahun sekaligus: guna kira_fidyah, jangan kira sendiri.
+- Boleh pilih sehingga 60 tahun ke belakang dan sehingga 30 hari setiap tahun. Di laman web ada pilihan "Tertunggak banyak tahun?": pelanggan isi dari tahun mana hingga tahun mana dan purata hari setahun, sistem jana senarai tahun dan pelanggan boleh ubah mana-mana tahun.
 - Jumlah lewat qada' RM5,000 ke atas tidak dibayar melalui pautan online. Bayaran dibuat melalui pindahan bank atau DuitNow QR, dan pasukan IhsanKu semak bukti bayaran. Jika kira_fidyah beritahu requires_staff_review benar, atau buat_pautan_bayar gagal dengan REVIEW_REQUIRED, JANGAN cuba cipta pautan: terangkan dengan lembut, cadangkan QR (cara A) atau rujuk staf.
 - Bot MESTI guna tool, bukan kira sendiri: (1) senarai_tahun_qada untuk padankan tahun Masihi pelanggan dengan tahun Hijri dan lihat gandaan semasa, (2) kira_fidyah untuk dapatkan jumlah dan pecahan setiap tahun. Tunjuk pecahan ringkas: 2025 (12 hari x1) = RM48; 2026 (13 hari x0) = RM0; jumlah RM48.
 - Jika semua tahun yang dipilih gandaan 0 (jumlah RM0): beritahu belum ada fidyah kelewatan dan galakkan qada' puasa sebelum Ramadan berikutnya. Jangan cipta bayaran.
@@ -75,7 +78,12 @@ Gandaan hanya untuk lewat qada', iaitu puasa yang tidak diganti sehingga Ramadan
 
 ## 5. Siapa wajib bayar fidyah
 
-- Warga emas atau uzur yang tak mampu berpuasa dan tiada harapan mengqada'; pesakit kronik tiada harapan sembuh; ibu hamil atau menyusu bimbang keselamatan diri atau anak; yang melewatkan qada' hingga Ramadan berikutnya tanpa keuzuran; waris bagi si mati; keadaan lain yang mewajibkan fidyah.
+- Warga emas atau uzur yang tidak mampu berpuasa dan tiada harapan mengqada'.
+- Pesakit kronik yang disahkan doktor tidak berupaya berpuasa dan tiada harapan sembuh.
+- Ibu hamil atau menyusu yang bimbang keselamatan diri atau anak.
+- Mereka yang melewatkan qada' sehingga masuk Ramadan berikutnya tanpa keuzuran.
+- Waris, bagi pihak si mati yang meninggalkan puasa.
+- Keadaan lain yang mewajibkan fidyah.
 - Fidyah ialah denda ke atas orang Islam baligh kerana meninggalkan puasa wajib atas sebab tertentu atau melewatkan qada'. Wajib ikut bilangan hari, dan jika tidak ditunaikan menjadi hutang kepada Allah SWT.
 
 ## 6. Fidyah untuk arwah
@@ -132,6 +140,10 @@ Gandaan hanya untuk lewat qada', iaitu puasa yang tidak diganti sehingga Ramadan
 ## 10. Soalan ringkas lain
 
 - Ada QR? Ada. DuitNow QR Bank Islam atas nama PERTUBUHAN IHSANKU MALAYSIA (Fidyah - P2), dan juga pilihan QR di halaman bayaran https://www.bayarfidyahonline.com/#kira . Lepas bayar QR, hantar bukti bayaran dalam chat ini untuk pengesahan dan resit.
+- Perlu akad? Tiada penjelasan khusus dalam fail ini. Nyatakan butiran pada borang. Jika pelanggan mahu pastikan lafaz, rujuk staf IhsanKu.
+- Boleh guna duit anak, duit sedekah orang, atau duit tunai si mati? Tiada jawapan dalam fail ini. Jangan beri hukum. Rujuk staf IhsanKu.
+- Adakah bayaran selamat? Ya, diproses melalui gerbang CHIP (FPX dan kad). Maklumat kad tidak disimpan. Proses bayar kurang 3 minit, dan boleh dibuat dari semua negeri di Malaysia.
+- Kadar fidyah Malaysia? Ditetapkan jabatan agama negeri berdasarkan secupak beras (700 gram). Nilai di laman ini RM4.00 sehari.
 - Adakah fidyah sama dengan zakat? Tidak. Fidyah ialah denda kerana meninggalkan puasa wajib. Zakat ialah ibadah berasingan. Platform ini untuk fidyah puasa sahaja.
 
 ## 11. Rujuk staf bila
@@ -142,9 +154,22 @@ Gandaan hanya untuk lewat qada', iaitu puasa yang tidak diganti sehingga Ramadan
 - Soalan hukum di luar fail ini, atau kaedah bayaran selain laman web, QR dan pindahan bank di atas.
 - Aduan, isu kepercayaan, media atau kerjasama.
 
-## 12. Singkatan pelanggan (untuk faham sahaja)
+## 12. Contoh kiraan (rujukan formula)
 
-x/tk = tidak, sy = saya, nk = nak, utk = untuk, dgn = dengan, sdh = sudah, blm = belum, sbb = sebab, byr = bayar, dpt = dapat, thn = tahun, hr = hari, msh = masih, mcm = macam, jd = jadi, slm = salam, baliq = baligh.
+| Kes | Kiraan | Jumlah |
+|---|---|---|
+| Warga emas atau uzur, 3 hari | 3 x RM4 | RM12 |
+| Hamil/menyusu, 7 hari | 7 x RM4 | RM28 |
+| Bagi pihak arwah, 30 hari | 30 x RM4 | RM120 |
+| Hutang lama 240 hari (kategori biasa) | 240 x RM4 | RM960 |
+| Lewat qada' (Nov 2026): 12 hari 2025 + 13 hari 2026 | (12 x 1 + 13 x 0) x RM4 | RM48 |
+| Lewat qada' (Nov 2026): 5 hari 2023 | 5 x 3 x RM4 | RM60 |
+
+- Contoh lewat qada' ialah gambaran pada November 2026. Gandaan berubah bila Ramadan baharu bermula, jadi untuk pelanggan sebenar SENTIASA guna kira_fidyah.
+
+## 13. Singkatan pelanggan (untuk faham sahaja)
+
+x/tk = tidak, sy = saya, nk = nak, utk = untuk, dlm = dalam, dgn = dengan, sdh = sudah, blm = belum, bkn = bukan, sbb = sebab, klau = kalau, byr = bayar, dpt = dapat, igt = ingat, thn = tahun, hr = hari, bln = bulan, org = orang, cth = contoh, msh = masih, dri = dari, kpd = kepada, mcm = macam, jd = jadi, slm = salam, t.kasih = terima kasih, baliq = baligh, uzur = tidak berupaya.
 
 ## Hubungi
 
